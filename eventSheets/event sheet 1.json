@@ -7,6 +7,270 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
+					"sid": 558055364892291,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 277447253442107,
+					"parameters": {
+						"animation": "\"East\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 660804784101685,
+					"parameters": {
+						"animation": "\"East_Block\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 489605739313544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 499959386212055,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 866488296391591,
+					"parameters": {
+						"animation": "\"North\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 771030655610166,
+					"parameters": {
+						"animation": "\"North_Block\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 836304454774169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 845081274658683,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 941693892674967,
+					"parameters": {
+						"animation": "\"South\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 677537124255497,
+					"parameters": {
+						"animation": "\"South_Block\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 400228377038364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 118153055010299,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 938980863927427,
+					"parameters": {
+						"animation": "\"West\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 325622436375593,
+					"parameters": {
+						"animation": "\"West_Block\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 191201041762147
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 969302046992084,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 443216771691153,
+					"parameters": {
+						"animation": "\"East_Block\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 885501339914559,
+					"parameters": {
+						"animation": "\"East\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 509613147867031
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 540245209594694,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 431116426198625,
+					"parameters": {
+						"animation": "\"North_Block\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 879954075127016,
+					"parameters": {
+						"animation": "\"North\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 127342705120966
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 701129828854523,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 522212870904540,
+					"parameters": {
+						"animation": "\"South_Block\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 290755837063975,
+					"parameters": {
+						"animation": "\"South\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 534025192046783
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 777384930335311,
+					"parameters": {
+						"key": 76
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Player",
+					"sid": 940956182595434,
+					"parameters": {
+						"animation": "\"West_Block\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 778861561144014,
+					"parameters": {
+						"animation": "\"West\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 954535258786237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
 					"sid": 306069334327218,
 					"parameters": {
 						"key": 68
@@ -38,6 +302,15 @@
 						"key": 65
 					},
 					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 349063422371517,
+					"parameters": {
+						"key": 76
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -53,7 +326,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 528896901781940,
+					"sid": 450398458414326,
 					"parameters": {
 						"animation": "\"East\"",
 						"from": "current-frame"
@@ -97,6 +370,15 @@
 					"sid": 157408658678289,
 					"parameters": {
 						"key": 65
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 735723451281574,
+					"parameters": {
+						"key": 76
 					},
 					"isInverted": true
 				}
@@ -160,6 +442,15 @@
 						"key": 65
 					},
 					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 244254622571449,
+					"parameters": {
+						"key": 76
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -221,6 +512,15 @@
 					"parameters": {
 						"key": 65
 					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 104058869636898,
+					"parameters": {
+						"key": 76
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -277,23 +577,299 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-moving-direction",
+					"objectClass": "Zombie",
+					"sid": 415413929650904,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "right"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 390715766977706,
+					"parameters": {
+						"animation": "\"East\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 753985117153201
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Zombie",
+					"sid": 688426284764368,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 874598474345836,
+					"parameters": {
+						"animation": "\"West\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 492216157873739
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Zombie",
+					"sid": 270241034732887,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 102050667791906,
+					"parameters": {
+						"animation": "\"South\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 934376502266688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Zombie",
+					"sid": 434816481202004,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 858599448339544,
+					"parameters": {
+						"animation": "\"North\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 869464756576526
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Zombie",
+					"sid": 494054434901212,
+					"behaviorType": "TileMovement",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Zombie",
+					"sid": 363434313249504
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Zombie",
+					"sid": 904433542903499,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 328247886837883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 436945528201707,
+					"parameters": {
+						"first-value": "Player.X - 32",
+						"comparison": 4,
+						"second-value": "Zombie.X"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 534681771226653,
+					"parameters": {
+						"object": "Player"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Zombie",
+					"sid": 666150675309205,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 891330392295029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 600643076187461,
+					"parameters": {
+						"first-value": "Player.Y - 32",
+						"comparison": 4,
+						"second-value": "Zombie.Y"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 204940696342083,
+					"parameters": {
+						"object": "Player"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Zombie",
+					"sid": 169876700175365,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 610957981265107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 954522845326931,
+					"parameters": {
+						"first-value": "Player.X + 32",
+						"comparison": 2,
+						"second-value": "Zombie.X"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 969688910772442,
+					"parameters": {
+						"object": "Player"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Zombie",
+					"sid": 846154123153028,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 571671354581121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 867262646308481,
+					"parameters": {
+						"first-value": "Player.Y + 32",
+						"comparison": 2,
+						"second-value": "Zombie.Y"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 777957528923692,
+					"parameters": {
+						"object": "Player"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Zombie",
+					"sid": 788620663630425,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 749854237264972
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 910953343522808
+					"sid": 391827838253676
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
 					"objectClass": "healthbar",
-					"sid": 146017946213879,
+					"sid": 772433835588868,
 					"parameters": {
 						"width": "Player.currentHealth * 32",
 						"height": "32"
 					}
 				}
 			],
-			"sid": 952815955426113
+			"sid": 385791700277414
 		},
 		{
 			"eventType": "block",
@@ -301,7 +877,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 633760219806994,
+					"sid": 865539737627925,
 					"parameters": {
 						"key": 69
 					}
@@ -311,7 +887,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "InvSprite",
-					"sid": 297434841174883,
+					"sid": 168265103447029,
 					"parameters": {
 						"visibility": "toggle"
 					}
@@ -319,13 +895,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "invSelect",
-					"sid": 511711610561518,
+					"sid": 246917964580377,
 					"parameters": {
 						"visibility": "toggle"
 					}
 				}
 			],
-			"sid": 722353057898421
+			"sid": 747515418300421
 		}
 	],
 	"sid": 959296099580758

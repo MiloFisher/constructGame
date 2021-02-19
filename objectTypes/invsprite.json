@@ -1,27 +1,27 @@
 {
 	"name": "InvSprite",
 	"plugin-id": "Sprite",
-	"sid": 531383408803398,
+	"sid": 544964442402612,
 	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "currItemSlot",
 			"type": "number",
 			"desc": "",
-			"sid": 946651732488508
+			"sid": 420623640303704
 		},
 		{
 			"name": "currItemID",
 			"type": "number",
 			"desc": "",
-			"sid": 699018939086028
+			"sid": 473391742858763
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
 			"name": "Anchor",
-			"sid": 445826104202883
+			"sid": 843012990714559
 		}
 	],
 	"effectTypes": [],
@@ -37,7 +37,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3933456,
+						"imageSpriteId": 2397511,
 						"collisionPoly": {
 							"points": [
 								0.3536299765807962,
@@ -54,7 +54,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 319256755314798,
+				"sid": 472165519375970,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -94,6 +94,54 @@
 					}
 				},
 				{
+					"type": "Zombie",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "South",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5,
+					"instanceVariables": {},
+					"behaviors": {
+						"TileMovement": {
+							"properties": {
+								"grid-width": 32,
+								"grid-height": 32,
+								"grid-offset-x": 0,
+								"grid-offset-y": 0,
+								"speed-x": 60,
+								"speed-y": 60,
+								"enabled": true,
+								"default-controls": false,
+								"isometric": false
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 341,
+						"y": 621,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "healthbar",
 					"properties": {
 						"initially-visible": true,
@@ -106,9 +154,9 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 5,
+					"uid": 6,
 					"instanceVariables": {
-						"maxHealth": 5
+						"maxHealth": 0
 					},
 					"behaviors": {
 						"Anchor": {
@@ -176,7 +224,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
+					"uid": 9,
 					"instanceVariables": {
 						"currItemSlot": 0,
 						"currItemID": 0
@@ -218,7 +266,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 7,
+					"uid": 8,
 					"instanceVariables": {},
 					"behaviors": {
 						"Anchor": {
@@ -233,7 +281,7 @@
 					},
 					"world": {
 						"x": 631,
-						"y": 158,
+						"y": 138,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -249,7 +297,7 @@
 					}
 				}
 			],
-			"sid": 315534217793200,
+			"sid": 604742765393132,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -283,7 +331,7 @@
 				"height": 2,
 				"depth": 1
 			},
-			"uid": 8,
+			"uid": 7,
 			"instanceVariables": {
 				"Sword": 1
 			}

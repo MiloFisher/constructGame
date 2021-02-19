@@ -1,14 +1,14 @@
 {
 	"name": "inv",
 	"plugin-id": "Arr",
-	"sid": 102107262637839,
+	"sid": 926438988484909,
 	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "Sword",
 			"type": "number",
 			"desc": "",
-			"sid": 250109970884390
+			"sid": 387404119517549
 		}
 	]
 }

@@ -77,10 +77,11 @@
 			"TiledBackground",
 			"Player",
 			"Keyboard",
+			"Zombie",
 			"healthbar",
-			"InvSprite",
+			"inv",
 			"invSelect",
-			"inv"
+			"InvSprite"
 		],
 		"subfolders": []
 	},

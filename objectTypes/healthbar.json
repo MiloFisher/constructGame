@@ -1,21 +1,21 @@
 {
 	"name": "healthbar",
 	"plugin-id": "TiledBg",
-	"sid": 370640009898966,
+	"sid": 999096348702387,
 	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "maxHealth",
 			"type": "number",
 			"desc": "",
-			"sid": 891338975777075
+			"sid": 695132854800084
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
 			"name": "Anchor",
-			"sid": 713573616437628
+			"sid": 141411390984799
 		}
 	],
 	"effectTypes": [],
@@ -27,7 +27,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6400420,
+		"imageSpriteId": 3290743,
 		"collisionPoly": {
 			"points": [
 				1,
