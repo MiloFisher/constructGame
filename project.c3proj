@@ -53,6 +53,14 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "0enpmsuvdrc",
@@ -60,7 +68,8 @@
 		"items": [
 			"TiledBackground",
 			"Player",
-			"Keyboard"
+			"Keyboard",
+			"healthbar"
 		],
 		"subfolders": []
 	},

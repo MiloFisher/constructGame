@@ -272,6 +272,28 @@
 				}
 			],
 			"sid": 908396425276335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 910953343522808
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "healthbar",
+					"sid": 146017946213879,
+					"parameters": {
+						"width": "Player.currentHealth * 32",
+						"height": "32"
+					}
+				}
+			],
+			"sid": 952815955426113
 		}
 	],
 	"sid": 959296099580758

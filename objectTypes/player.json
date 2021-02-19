@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 977488745346495,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "currentHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 308392980412158
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "TileMovement",
