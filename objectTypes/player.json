@@ -2,7 +2,7 @@
 	"name": "Player",
 	"plugin-id": "Sprite",
 	"sid": 977488745346495,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "currentHealth",

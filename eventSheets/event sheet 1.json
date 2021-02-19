@@ -53,7 +53,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Player",
-					"sid": 450398458414326,
+					"sid": 528896901781940,
 					"parameters": {
 						"animation": "\"East\"",
 						"from": "current-frame"
@@ -294,6 +294,38 @@
 				}
 			],
 			"sid": 952815955426113
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 633760219806994,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "InvSprite",
+					"sid": 297434841174883,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "invSelect",
+					"sid": 511711610561518,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 722353057898421
 		}
 	],
 	"sid": 959296099580758

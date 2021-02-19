@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -69,7 +77,10 @@
 			"TiledBackground",
 			"Player",
 			"Keyboard",
-			"healthbar"
+			"healthbar",
+			"InvSprite",
+			"invSelect",
+			"inv"
 		],
 		"subfolders": []
 	},
