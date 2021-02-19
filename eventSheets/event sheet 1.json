@@ -1,0 +1,278 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 306069334327218,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 885083881566736,
+					"parameters": {
+						"key": 87
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 844613011611237,
+					"parameters": {
+						"key": 83
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 475934605795609,
+					"parameters": {
+						"key": 65
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 404476466362445,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 450398458414326,
+					"parameters": {
+						"animation": "\"East\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 314280551758558
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 872606485230586,
+					"parameters": {
+						"key": 68
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 960892844971248,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 284941672211888,
+					"parameters": {
+						"key": 83
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 157408658678289,
+					"parameters": {
+						"key": 65
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 967622819139855,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 400224680787326,
+					"parameters": {
+						"animation": "\"North\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 348940221479755
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 311011964476159,
+					"parameters": {
+						"key": 68
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 979310469821736,
+					"parameters": {
+						"key": 87
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 550077300411554,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 673715912845541,
+					"parameters": {
+						"key": 65
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 946104516561188,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 448401504817273,
+					"parameters": {
+						"animation": "\"South\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 783870314619551
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 984241542784540,
+					"parameters": {
+						"key": 68
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 505290206243333,
+					"parameters": {
+						"key": 87
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 448684490388670,
+					"parameters": {
+						"key": 83
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 683302890908402,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Player",
+					"sid": 366885882671350,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 268370859483868,
+					"parameters": {
+						"animation": "\"West\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 747978159945985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 888139021487555,
+					"behaviorType": "TileMovement",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Player",
+					"sid": 248401974979641
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Player",
+					"sid": 757283462645106,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 908396425276335
+		}
+	],
+	"sid": 959296099580758
+}
