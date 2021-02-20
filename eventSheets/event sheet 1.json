@@ -30,6 +30,15 @@
 						"animation": "\"East_Block\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 825708808370480,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 489605739313544
@@ -62,6 +71,15 @@
 					"parameters": {
 						"animation": "\"North_Block\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 839778150669274,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "true"
 					}
 				}
 			],
@@ -96,6 +114,15 @@
 						"animation": "\"South_Block\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 859485418585894,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 400228377038364
@@ -128,6 +155,15 @@
 					"parameters": {
 						"animation": "\"West_Block\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 168706869988453,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "true"
 					}
 				}
 			],
@@ -162,6 +198,15 @@
 						"animation": "\"East\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 967194285623691,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 509613147867031
@@ -194,6 +239,15 @@
 					"parameters": {
 						"animation": "\"North\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 806801009707120,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "false"
 					}
 				}
 			],
@@ -228,6 +282,15 @@
 						"animation": "\"South\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 119873842378384,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 534025192046783
@@ -260,6 +323,15 @@
 					"parameters": {
 						"animation": "\"West\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 872362966461087,
+					"parameters": {
+						"instance-variable": "isBlocking",
+						"value": "false"
 					}
 				}
 			],
@@ -899,9 +971,148 @@
 					"parameters": {
 						"visibility": "toggle"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "coinAmount",
+					"sid": 903326289923572,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "coinSpriteInv",
+					"sid": 188362701385925,
+					"parameters": {
+						"visibility": "toggle"
+					}
 				}
 			],
 			"sid": 747515418300421
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 809047252985924,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 628096791146246,
+					"parameters": {
+						"instance-variable": "invincible"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 239211132229332,
+					"parameters": {
+						"instance-variable": "isBlocking"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 340850209441028,
+					"parameters": {
+						"instance-variable": "currentHealth",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 397185015248982,
+					"parameters": {
+						"instance-variable": "invincible",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Player",
+					"sid": 431339119881066,
+					"parameters": {
+						"opacity": "60"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 649868151186681,
+					"parameters": {
+						"seconds": "2.0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 360911107577938,
+					"parameters": {
+						"instance-variable": "invincible",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Player",
+					"sid": 364716003056124,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 518653694614330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "coinSprite",
+					"sid": 950280618543241,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "coinSprite",
+					"sid": 243461687078846
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "inv",
+					"sid": 998251608309236,
+					"parameters": {
+						"instance-variable": "coins",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "coinAmount",
+					"sid": 911439038430516,
+					"parameters": {
+						"text": "\"x\" & inv.coins"
+					}
+				}
+			],
+			"sid": 445198720920021
 		}
 	],
 	"sid": 959296099580758

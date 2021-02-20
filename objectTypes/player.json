@@ -9,6 +9,18 @@
 			"type": "number",
 			"desc": "",
 			"sid": 102956855019376
+		},
+		{
+			"name": "invincible",
+			"type": "boolean",
+			"desc": "",
+			"sid": 417311536544792
+		},
+		{
+			"name": "isBlocking",
+			"type": "boolean",
+			"desc": "",
+			"sid": 606604487996575
 		}
 	],
 	"behaviorTypes": [

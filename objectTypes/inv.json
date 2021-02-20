@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 387404119517549
+		},
+		{
+			"name": "coins",
+			"type": "number",
+			"desc": "",
+			"sid": 607968575109011
 		}
 	]
 }
