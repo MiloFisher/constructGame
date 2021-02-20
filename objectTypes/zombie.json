@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 760438711424614,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "number",
+			"desc": "",
+			"sid": 625826748366631
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "TileMovement",
@@ -14,6 +21,11 @@
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 163500904567789
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 448722385254490
 		}
 	],
 	"effectTypes": [],

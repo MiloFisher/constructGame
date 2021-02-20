@@ -403,6 +403,15 @@
 						"animation": "\"East\"",
 						"from": "current-frame"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 126077704159912,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 314280551758558
@@ -472,6 +481,15 @@
 					"parameters": {
 						"animation": "\"North\"",
 						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 328191989969250,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "2"
 					}
 				}
 			],
@@ -543,6 +561,15 @@
 						"animation": "\"South\"",
 						"from": "current-frame"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 220730764339250,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 783870314619551
@@ -613,6 +640,15 @@
 						"animation": "\"West\"",
 						"from": "current-frame"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 227910376322246,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "3"
+					}
 				}
 			],
 			"sid": 747978159945985
@@ -649,6 +685,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 386836193078298,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
 					"id": "is-moving-direction",
 					"objectClass": "Zombie",
 					"sid": 415413929650904,
@@ -674,6 +718,14 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 923359204371647,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
 				{
 					"id": "is-moving-direction",
 					"objectClass": "Zombie",
@@ -701,6 +753,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 407062379410837,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
 					"id": "is-moving-direction",
 					"objectClass": "Zombie",
 					"sid": 270241034732887,
@@ -726,6 +786,14 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 665982314440472,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
 				{
 					"id": "is-moving-direction",
 					"objectClass": "Zombie",
@@ -753,6 +821,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 889899790176151,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
 					"id": "is-moving",
 					"objectClass": "Zombie",
 					"sid": 494054434901212,
@@ -775,11 +851,157 @@
 					}
 				}
 			],
-			"sid": 328247886837883
+			"sid": 328247886837883,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 594335612896312,
+							"parameters": {
+								"value": "Zombie.Y > Player.Y & abs(Zombie.Y - Player.Y) > abs(Zombie.X - Player.X)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Zombie",
+							"sid": 810239488147201,
+							"parameters": {
+								"animation": "\"North\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Zombie",
+							"sid": 843053690528981,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 577808202203847
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 743207007213651,
+							"parameters": {
+								"value": "Zombie.Y < Player.Y & abs(Zombie.Y - Player.Y) > abs(Zombie.X - Player.X)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Zombie",
+							"sid": 142104680617952,
+							"parameters": {
+								"animation": "\"South\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Zombie",
+							"sid": 343605531196863,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 979694975128208
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 795601842760029,
+							"parameters": {
+								"value": "Zombie.X > Player.X & abs(Zombie.Y - Player.Y) < abs(Zombie.X - Player.X)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Zombie",
+							"sid": 253254470232458,
+							"parameters": {
+								"animation": "\"West\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Zombie",
+							"sid": 474795832198611,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 267041981320087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "evaluate-expression",
+							"objectClass": "System",
+							"sid": 531833766978089,
+							"parameters": {
+								"value": "Zombie.X < Player.X & abs(Zombie.Y - Player.Y) < abs(Zombie.X - Player.X)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Zombie",
+							"sid": 123834644196058,
+							"parameters": {
+								"animation": "\"East\"",
+								"from": "current-frame"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Zombie",
+							"sid": 771863619135430,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 138547708234287
+				}
+			]
 		},
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 298530798687272,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
@@ -791,13 +1013,12 @@
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Zombie",
-					"sid": 534681771226653,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 669516767620017,
 					"parameters": {
-						"object": "Player"
-					},
-					"isInverted": true
+						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+					}
 				}
 			],
 			"actions": [
@@ -809,6 +1030,15 @@
 					"parameters": {
 						"control": "right"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 506220617634990,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 891330392295029
@@ -816,6 +1046,14 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 223672481565577,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
@@ -827,13 +1065,12 @@
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Zombie",
-					"sid": 204940696342083,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 745109549786312,
 					"parameters": {
-						"object": "Player"
-					},
-					"isInverted": true
+						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+					}
 				}
 			],
 			"actions": [
@@ -845,6 +1082,15 @@
 					"parameters": {
 						"control": "down"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 533168707634993,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 610957981265107
@@ -852,6 +1098,14 @@
 		{
 			"eventType": "block",
 			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 328533513884285,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
@@ -863,13 +1117,12 @@
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Zombie",
-					"sid": 969688910772442,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 687770285332457,
 					"parameters": {
-						"object": "Player"
-					},
-					"isInverted": true
+						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+					}
 				}
 			],
 			"actions": [
@@ -881,6 +1134,15 @@
 					"parameters": {
 						"control": "left"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 397708530379052,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "3"
+					}
 				}
 			],
 			"sid": 571671354581121
@@ -889,9 +1151,17 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 351973009749671,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 867262646308481,
+					"sid": 705409476721333,
 					"parameters": {
 						"first-value": "Player.Y + 32",
 						"comparison": 2,
@@ -899,13 +1169,12 @@
 					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Zombie",
-					"sid": 777957528923692,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 184602807425049,
 					"parameters": {
-						"object": "Player"
-					},
-					"isInverted": true
+						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+					}
 				}
 			],
 			"actions": [
@@ -916,6 +1185,15 @@
 					"behaviorType": "TileMovement",
 					"parameters": {
 						"control": "up"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 927526100246980,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "2"
 					}
 				}
 			],
@@ -995,11 +1273,27 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Zombie",
-					"sid": 809047252985924,
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 141733676991564,
 					"parameters": {
-						"object": "Player"
+						"interval-seconds": "1.0"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 503269090318026,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 798675768873721,
+					"parameters": {
+						"value": "abs(Zombie.X - Player.X) <= 64 & abs(Zombie.Y - Player.Y) <= 64"
 					}
 				},
 				{
@@ -1012,11 +1306,11 @@
 					"isInverted": true
 				},
 				{
-					"id": "is-boolean-instance-variable-set",
-					"objectClass": "Player",
-					"sid": 239211132229332,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 982933150005706,
 					"parameters": {
-						"instance-variable": "isBlocking"
+						"value": "Player.isBlocking & abs(Player.direction - Zombie.direction) = 2"
 					},
 					"isInverted": true
 				}
@@ -1113,6 +1407,193 @@
 				}
 			],
 			"sid": 445198720920021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 671946186561291,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 167043176789237,
+					"parameters": {
+						"instance-variable": "isBlocking"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 636950083270548,
+					"parameters": {
+						"animation": "\"East_Block\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 989251582882616,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 873303443190455
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 968704551035330,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 926475267327189,
+					"parameters": {
+						"instance-variable": "isBlocking"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 588973181203893,
+					"parameters": {
+						"animation": "\"South_Block\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 293043726005192,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 370583276152488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 122752673169893,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 348249211925948,
+					"parameters": {
+						"instance-variable": "isBlocking"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 588222005968286,
+					"parameters": {
+						"animation": "\"North_Block\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 857241762079615,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 410266309479965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 277876508143621,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 492333137663405,
+					"parameters": {
+						"instance-variable": "isBlocking"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 676949166679381,
+					"parameters": {
+						"animation": "\"West_Block\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 405879152486554,
+					"parameters": {
+						"instance-variable": "direction",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 617131080468983,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-between-angles",
+							"objectClass": "System",
+							"sid": 978786452155624,
+							"parameters": {
+								"angle": "0",
+								"first-angle": "0",
+								"second-angle": "45"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 320696026825949
+				}
+			]
 		}
 	],
 	"sid": 959296099580758
