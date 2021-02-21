@@ -928,6 +928,36 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
+					"sid": 182810991202833
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "itemSprite",
+					"sid": 479100896852165,
+					"parameters": {
+						"frame-number": "itemSprite.itemID"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "healthbar",
+					"sid": 877445163786036,
+					"parameters": {
+						"width": "Player.currentHealth * 32",
+						"height": "32"
+					}
+				}
+			],
+			"sid": 420314571717118
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
 					"sid": 364317568366123
 				},
 				{
@@ -940,15 +970,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "healthbar",
-					"sid": 772433835588868,
-					"parameters": {
-						"width": "Player.currentHealth * 32",
-						"height": "32"
-					}
-				},
 				{
 					"id": "set-z-elevation",
 					"objectClass": "Player",
@@ -991,15 +1012,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "invSelect",
-					"sid": 246917964580377,
-					"parameters": {
-						"visibility": "toggle"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "coinAmount",
+					"objectClass": "itemAmount",
 					"sid": 903326289923572,
 					"parameters": {
 						"visibility": "toggle"
@@ -1007,7 +1020,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "coinSpriteInv",
+					"objectClass": "itemSpriteInv",
 					"sid": 188362701385925,
 					"parameters": {
 						"visibility": "toggle"
@@ -1475,7 +1488,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "coinSprite",
+					"objectClass": "itemSprite",
 					"sid": 950280618543241,
 					"parameters": {
 						"object": "Player"
@@ -1485,28 +1498,48 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "coinSprite",
+					"objectClass": "itemSprite",
 					"sid": 243461687078846
 				},
 				{
-					"id": "add-to-instvar",
+					"id": "set-at-x",
 					"objectClass": "inv",
-					"sid": 998251608309236,
+					"sid": 747773989678592,
 					"parameters": {
-						"instance-variable": "coins",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "coinAmount",
-					"sid": 911439038430516,
-					"parameters": {
-						"text": "\"x\" & inv.coins"
+						"x": "itemSprite.itemID",
+						"value": "inv.At(itemSprite.itemID)+1"
 					}
 				}
 			],
-			"sid": 445198720920021
+			"sid": 445198720920021,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "itemAmount",
+							"sid": 672400896242680,
+							"parameters": {
+								"instance-variable": "slotID",
+								"comparison": 0,
+								"value": "itemSprite.itemID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "itemAmount",
+							"sid": 285546070211720,
+							"parameters": {
+								"text": "inv.At(itemSprite.itemID)"
+							}
+						}
+					],
+					"sid": 479812222904674
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1961,6 +1994,26 @@
 					"id": "destroy",
 					"objectClass": "Zombie",
 					"sid": 235929442583304
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Zombie",
+					"sid": 447203737232128,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 626346636722549,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 770515345872137

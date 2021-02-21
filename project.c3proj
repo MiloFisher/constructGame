@@ -96,11 +96,10 @@
 			"Zombie",
 			"healthbar",
 			"inv",
-			"invSelect",
 			"InvSprite",
-			"coinSprite",
-			"coinAmount",
-			"coinSpriteInv"
+			"itemSprite",
+			"itemAmount",
+			"itemSpriteInv"
 		],
 		"subfolders": []
 	},
