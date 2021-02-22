@@ -726,6 +726,11 @@
 					}
 				},
 				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 308666207701772
+				},
+				{
 					"id": "compare-two-values",
 					"objectClass": "System",
 					"sid": 436945528201707,
@@ -776,6 +781,11 @@
 					"parameters": {
 						"object": "Zombie"
 					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 621160844843795
 				},
 				{
 					"id": "compare-two-values",
@@ -830,6 +840,11 @@
 					}
 				},
 				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 484972831070437
+				},
+				{
 					"id": "compare-two-values",
 					"objectClass": "System",
 					"sid": 954522845326931,
@@ -880,6 +895,11 @@
 					"parameters": {
 						"object": "Zombie"
 					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 534874455472455
 				},
 				{
 					"id": "compare-two-values",
@@ -2009,10 +2029,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "itemSprite",
-					"sid": 626346636722549,
+					"sid": 834151541629758,
 					"parameters": {
 						"instance-variable": "itemID",
-						"value": "1"
+						"value": "int(random(0,2))"
 					}
 				}
 			],

@@ -99,7 +99,9 @@
 			"InvSprite",
 			"itemSprite",
 			"itemAmount",
-			"itemSpriteInv"
+			"itemSpriteInv",
+			"Sprite",
+			"Border"
 		],
 		"subfolders": []
 	},
