@@ -2057,6 +2057,30 @@
 					"id": "destroy",
 					"objectClass": "Player",
 					"sid": 130431726430282
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 851950334613680,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "gameOver",
+					"sid": 325675760798723,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "gameOverBG",
+					"sid": 662677519903681,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 923759753205011

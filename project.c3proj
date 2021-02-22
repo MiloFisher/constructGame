@@ -100,8 +100,10 @@
 			"itemSprite",
 			"itemAmount",
 			"itemSpriteInv",
-			"Sprite",
-			"Border"
+			"Border",
+			"chest",
+			"gameOver",
+			"gameOverBG"
 		],
 		"subfolders": []
 	},

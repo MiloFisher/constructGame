@@ -586,6 +586,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "chest",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1511,
+						"y": 757,
+						"width": 80,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 418215376402330,
@@ -616,37 +645,6 @@
 			"name": "inv",
 			"overriden": 0,
 			"instances": [
-				{
-					"type": "itemSprite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"instanceVariables": {
-						"itemID": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 888,
-						"y": 521,
-						"width": 48,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "InvSprite",
 					"properties": {
@@ -1140,7 +1138,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1164,7 +1162,7 @@
 						}
 					},
 					"world": {
-						"x": 307,
+						"x": 276,
 						"y": 179,
 						"width": 106,
 						"height": 29,
@@ -1190,7 +1188,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1214,7 +1212,7 @@
 						}
 					},
 					"world": {
-						"x": 443,
+						"x": 412,
 						"y": 179,
 						"width": 106,
 						"height": 29,
@@ -1240,7 +1238,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1264,7 +1262,7 @@
 						}
 					},
 					"world": {
-						"x": 579,
+						"x": 548,
 						"y": 179,
 						"width": 106,
 						"height": 29,
@@ -1290,7 +1288,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1314,7 +1312,7 @@
 						}
 					},
 					"world": {
-						"x": 715,
+						"x": 684,
 						"y": 179,
 						"width": 106,
 						"height": 29,
@@ -1340,7 +1338,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1364,7 +1362,7 @@
 						}
 					},
 					"world": {
-						"x": 171,
+						"x": 140,
 						"y": 323,
 						"width": 106,
 						"height": 29,
@@ -1390,7 +1388,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1414,7 +1412,7 @@
 						}
 					},
 					"world": {
-						"x": 307,
+						"x": 276,
 						"y": 323,
 						"width": 106,
 						"height": 29,
@@ -1440,7 +1438,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1464,7 +1462,7 @@
 						}
 					},
 					"world": {
-						"x": 443,
+						"x": 412,
 						"y": 323,
 						"width": 106,
 						"height": 29,
@@ -1490,7 +1488,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1514,7 +1512,7 @@
 						}
 					},
 					"world": {
-						"x": 579,
+						"x": 548,
 						"y": 323,
 						"width": 106,
 						"height": 29,
@@ -1540,7 +1538,7 @@
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
 						"scale": 2.5,
-						"character-spacing": 0,
+						"character-spacing": -11,
 						"line-height": 0,
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
@@ -1564,7 +1562,7 @@
 						}
 					},
 					"world": {
-						"x": 171,
+						"x": 140,
 						"y": 179,
 						"width": 106,
 						"height": 29,
@@ -1615,6 +1613,93 @@
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "gameOverBG",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 40,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 854,
+						"height": 480,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "gameOver",
+					"properties": {
+						"text": "GAME OVER",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 5.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "center"
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 427,
+						"y": 240,
+						"width": 1019,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
