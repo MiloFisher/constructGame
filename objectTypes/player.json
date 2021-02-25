@@ -45,6 +45,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 696455454518382
+		},
+		{
+			"name": "inInventory",
+			"type": "boolean",
+			"desc": "",
+			"sid": 779765843027471
 		}
 	],
 	"behaviorTypes": [

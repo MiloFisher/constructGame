@@ -85,6 +85,22 @@
 			"author": "Scirra",
 			"version": "r234.4",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
 		}
 	],
 	"uniqueId": "0enpmsuvdrc",
@@ -103,7 +119,9 @@
 			"Border",
 			"chest",
 			"gameOver",
-			"gameOverBG"
+			"gameOverBG",
+			"arrowProjectile",
+			"Door"
 		],
 		"subfolders": []
 	},
@@ -115,7 +133,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Test Layout",
+			"Level Template",
+			"Level 1"
 		],
 		"subfolders": []
 	},

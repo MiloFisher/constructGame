@@ -2,6 +2,76 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "PlayerHealth",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 228048404927351
+		},
+		{
+			"eventType": "variable",
+			"name": "CreatedLevels",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 993717238654379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 514258111599553
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 937586899325768,
+					"parameters": {
+						"name": "\"loop\"",
+						"start-index": "0",
+						"end-index": "1"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "itemAmount",
+					"sid": 219054483346650,
+					"parameters": {
+						"instance-variable": "slotID",
+						"comparison": 0,
+						"value": "loopindex"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "itemAmount",
+					"sid": 135109144058816,
+					"parameters": {
+						"text": "inv.At(loopindex)"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 455030706035530,
+					"parameters": {
+						"instance-variable": "currentHealth",
+						"value": "PlayerHealth"
+					}
+				}
+			],
+			"sid": 342130063383700
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -27,6 +97,15 @@
 					"sid": 957159571856253,
 					"parameters": {
 						"instance-variable": "attackInProgress"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 212598912279628,
+					"parameters": {
+						"instance-variable": "inInventory"
 					},
 					"isInverted": true
 				}
@@ -172,6 +251,15 @@
 						"instance-variable": "attackInProgress"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 937966381847939,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -258,6 +346,15 @@
 					"sid": 378238313499530,
 					"parameters": {
 						"instance-variable": "attackInProgress"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 481559977797809,
+					"parameters": {
+						"instance-variable": "inInventory"
 					},
 					"isInverted": true
 				}
@@ -357,6 +454,15 @@
 						"instance-variable": "attackInProgress"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 252878156270877,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -452,6 +558,15 @@
 					"sid": 272298382412381,
 					"parameters": {
 						"instance-variable": "attackInProgress"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 937552863741238,
+					"parameters": {
+						"instance-variable": "inInventory"
 					},
 					"isInverted": true
 				}
@@ -747,6 +862,15 @@
 					"parameters": {
 						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 550144759318998,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -804,6 +928,15 @@
 					"parameters": {
 						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 744804776382019,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -861,6 +994,15 @@
 					"parameters": {
 						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 267444230413382,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -918,6 +1060,15 @@
 					"parameters": {
 						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 417965010103475,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -941,36 +1092,6 @@
 				}
 			],
 			"sid": 749854237264972
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 182810991202833
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation-frame",
-					"objectClass": "itemSprite",
-					"sid": 479100896852165,
-					"parameters": {
-						"frame-number": "itemSprite.itemID"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "healthbar",
-					"sid": 877445163786036,
-					"parameters": {
-						"width": "Player.currentHealth * 32",
-						"height": "32"
-					}
-				}
-			],
-			"sid": 420314571717118
 		},
 		{
 			"eventType": "block",
@@ -1044,6 +1165,14 @@
 					"sid": 188362701385925,
 					"parameters": {
 						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 170945146230683,
+					"parameters": {
+						"instance-variable": "inInventory"
 					}
 				}
 			],
@@ -1257,6 +1386,15 @@
 					"sid": 650031260135730,
 					"parameters": {
 						"value": "Zombie.chargingUp | Zombie.attacking | Zombie.attackPause"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 798552221669008,
+					"parameters": {
+						"instance-variable": "inInventory"
 					},
 					"isInverted": true
 				}
@@ -1513,6 +1651,16 @@
 					"parameters": {
 						"object": "Player"
 					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "itemAmount",
+					"sid": 968803376256965,
+					"parameters": {
+						"instance-variable": "slotID",
+						"comparison": 0,
+						"value": "itemSprite.itemID"
+					}
 				}
 			],
 			"actions": [
@@ -1529,37 +1677,17 @@
 						"x": "itemSprite.itemID",
 						"value": "inv.At(itemSprite.itemID)+1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "itemAmount",
+					"sid": 325070411088069,
+					"parameters": {
+						"text": "inv.At(itemSprite.itemID)"
+					}
 				}
 			],
-			"sid": 445198720920021,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "itemAmount",
-							"sid": 672400896242680,
-							"parameters": {
-								"instance-variable": "slotID",
-								"comparison": 0,
-								"value": "itemSprite.itemID"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "itemAmount",
-							"sid": 285546070211720,
-							"parameters": {
-								"text": "inv.At(itemSprite.itemID)"
-							}
-						}
-					],
-					"sid": 479812222904674
-				}
-			]
+			"sid": 445198720920021
 		},
 		{
 			"eventType": "block",
@@ -1579,6 +1707,15 @@
 					"parameters": {
 						"instance-variable": "isBlocking"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 244819987265575,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1629,6 +1766,15 @@
 					"parameters": {
 						"instance-variable": "isBlocking"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 405474444690225,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1679,6 +1825,15 @@
 					"parameters": {
 						"instance-variable": "isBlocking"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 767053452544445,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1729,6 +1884,15 @@
 					"parameters": {
 						"instance-variable": "isBlocking"
 					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 265809760761739,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1787,6 +1951,15 @@
 					"sid": 255817190114498,
 					"parameters": {
 						"instance-variable": "isAttacking"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 390450013776206,
+					"parameters": {
+						"instance-variable": "inInventory"
 					},
 					"isInverted": true
 				}
@@ -2084,6 +2257,380 @@
 				}
 			],
 			"sid": 923759753205011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 571203922563009,
+					"parameters": {
+						"key": 74
+					}
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 474669264685217,
+					"parameters": {
+						"value": "inv.At(1) > 0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "itemAmount",
+					"sid": 414843074437974,
+					"parameters": {
+						"instance-variable": "slotID",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 290885517193745,
+					"parameters": {
+						"key": 75
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 225854692031403,
+					"parameters": {
+						"key": 76
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Player",
+					"sid": 348730432407501,
+					"parameters": {
+						"instance-variable": "inInventory"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 178086144752538,
+					"parameters": {
+						"object": "arrowProjectile",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "arrowProjectile",
+					"sid": 264681646073455,
+					"parameters": {
+						"angle": "-90 * Player.direction + 90"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "inv",
+					"sid": 302446171848456,
+					"parameters": {
+						"x": "1",
+						"value": "inv.At(1) - 1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "itemAmount",
+					"sid": 489305212565245,
+					"parameters": {
+						"text": "inv.At(1)"
+					}
+				}
+			],
+			"sid": 130910830159637
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "arrowProjectile",
+					"sid": 114767911793953,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "arrowProjectile",
+					"sid": 622527567283653,
+					"parameters": {
+						"object": "Border"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "arrowProjectile",
+					"sid": 498490518638221
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Zombie",
+					"sid": 467165964507454,
+					"parameters": {
+						"instance-variable": "health",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Zombie",
+					"sid": 162947765648790,
+					"parameters": {
+						"instance-variable": "invincible",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Zombie",
+					"sid": 476906233872930,
+					"parameters": {
+						"opacity": "60"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 199999673139543,
+					"parameters": {
+						"seconds": "0.4"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Zombie",
+					"sid": 316163836483667,
+					"parameters": {
+						"instance-variable": "invincible",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Zombie",
+					"sid": 409267651781524,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 496046017862037,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 772336606771752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "itemSprite",
+					"sid": 838908235466972,
+					"parameters": {
+						"frame-number": "itemSprite.itemID"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "healthbar",
+					"sid": 934135582350899,
+					"parameters": {
+						"width": "Player.currentHealth * 32",
+						"height": "32"
+					}
+				}
+			],
+			"sid": 539781620110296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 923970065936143,
+					"parameters": {
+						"object": "Door"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 229780660837168,
+					"parameters": {
+						"variable": "PlayerHealth",
+						"value": "Player.currentHealth"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 168007245498010,
+					"parameters": {
+						"layout": "\"Level \" & random(0,CreatedLevels + 1)"
+					}
+				}
+			],
+			"sid": 696641379822484
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 391912666864237,
+					"parameters": {
+						"object": "chest"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "chest",
+					"sid": 700442663514701,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "chest",
+					"sid": 803893728507997,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "chest",
+					"sid": 983151015921094,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 999580650657196,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "int(random(0,2))"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "chest",
+					"sid": 385862080417922,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 921804327457959,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "int(random(0,2))"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "chest",
+					"sid": 297710548454250,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 481483949117512,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "int(random(0,2))"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "chest",
+					"sid": 197354323366194,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 113509960148707,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "int(random(0,2))"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "chest",
+					"sid": 578880562286596,
+					"parameters": {
+						"object": "itemSprite",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "itemSprite",
+					"sid": 649844485944857,
+					"parameters": {
+						"instance-variable": "itemID",
+						"value": "int(random(0,2))"
+					}
+				}
+			],
+			"sid": 895023516201117
 		}
 	],
 	"sid": 959296099580758
