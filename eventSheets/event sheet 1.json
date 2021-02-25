@@ -12,16 +12,6 @@
 			"sid": 228048404927351
 		},
 		{
-			"eventType": "variable",
-			"name": "CreatedLevels",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 993717238654379
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2489,11 +2479,11 @@
 					}
 				},
 				{
-					"id": "go-to-layout-by-name",
+					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 168007245498010,
+					"sid": 390358265283057,
 					"parameters": {
-						"layout": "\"Level \" & random(0,CreatedLevels + 1)"
+						"which": "next"
 					}
 				}
 			],
