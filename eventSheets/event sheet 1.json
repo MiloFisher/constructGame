@@ -1124,54 +1124,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 865539737627925,
-					"parameters": {
-						"key": 69
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "InvSprite",
-					"sid": 168265103447029,
-					"parameters": {
-						"visibility": "toggle"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "itemAmount",
-					"sid": 903326289923572,
-					"parameters": {
-						"visibility": "toggle"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "itemSpriteInv",
-					"sid": 188362701385925,
-					"parameters": {
-						"visibility": "toggle"
-					}
-				},
-				{
-					"id": "toggle-boolean-instvar",
-					"objectClass": "Player",
-					"sid": 170945146230683,
-					"parameters": {
-						"instance-variable": "inInventory"
-					}
-				}
-			],
-			"sid": 747515418300421
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "for-each",
 					"objectClass": "System",
 					"sid": 138610861476754,

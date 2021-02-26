@@ -112,7 +112,6 @@
 			"Zombie",
 			"healthbar",
 			"inv",
-			"InvSprite",
 			"itemSprite",
 			"itemAmount",
 			"itemSpriteInv",
@@ -135,7 +134,8 @@
 		"items": [
 			"Test Layout",
 			"Level Template",
-			"Level 1"
+			"Level 1",
+			"Level 2"
 		],
 		"subfolders": []
 	},
