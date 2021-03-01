@@ -569,7 +569,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -582,7 +582,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -631,7 +636,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -644,7 +649,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -693,7 +703,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -706,7 +716,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -755,7 +770,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -768,7 +783,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -817,7 +837,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -830,7 +850,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -879,7 +904,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -892,7 +917,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -941,7 +971,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -954,7 +984,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1003,7 +1038,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "South",
+						"initial-animation": "Zombie_South",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1016,7 +1051,12 @@
 						"anim": "",
 						"attackPause": false,
 						"invincible": false,
-						"health": 3
+						"health": 3,
+						"Creature": "Zombie",
+						"Size": 1,
+						"AttackRangeModifier": 0,
+						"AttackSpeed": 1.5,
+						"AttackLength": 0.2
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1633,16 +1673,23 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 54,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 2320.5,
-						"y": 1136,
+						"x": 2322,
+						"y": 1120,
 						"width": 256,
 						"height": 128,
 						"originX": 0.5,

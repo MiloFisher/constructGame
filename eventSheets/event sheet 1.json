@@ -672,9 +672,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 390715766977706,
+					"sid": 103048560694623,
 					"parameters": {
-						"animation": "\"East\"",
+						"animation": "Zombie.Creature & \"_East\"",
 						"from": "current-frame"
 					}
 				},
@@ -715,9 +715,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 874598474345836,
+					"sid": 805244602463112,
 					"parameters": {
-						"animation": "\"West\"",
+						"animation": "Zombie.Creature & \"_West\"",
 						"from": "current-frame"
 					}
 				},
@@ -758,9 +758,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 102050667791906,
+					"sid": 980456757365330,
 					"parameters": {
-						"animation": "\"South\"",
+						"animation": "Zombie.Creature & \"_South\"",
 						"from": "current-frame"
 					}
 				},
@@ -801,9 +801,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 858599448339544,
+					"sid": 924823236641913,
 					"parameters": {
-						"animation": "\"North\"",
+						"animation": "Zombie.Creature & \"_North\"",
 						"from": "current-frame"
 					}
 				},
@@ -848,9 +848,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 669516767620017,
+					"sid": 520957963160669,
 					"parameters": {
-						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+						"value": "abs(Zombie.X - Player.X) >= 96 * Zombie.Size | abs(Zombie.Y - Player.Y) >= 96 * Zombie.Size"
 					}
 				},
 				{
@@ -914,9 +914,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 745109549786312,
+					"sid": 437044701296803,
 					"parameters": {
-						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+						"value": "abs(Zombie.X - Player.X) >= 96 * Zombie.Size | abs(Zombie.Y - Player.Y) >= 96 * Zombie.Size"
 					}
 				},
 				{
@@ -980,9 +980,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 687770285332457,
+					"sid": 747824482886661,
 					"parameters": {
-						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+						"value": "abs(Zombie.X - Player.X) >= 96 * Zombie.Size | abs(Zombie.Y - Player.Y) >= 96 * Zombie.Size"
 					}
 				},
 				{
@@ -1046,9 +1046,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 184602807425049,
+					"sid": 460868004583080,
 					"parameters": {
-						"value": "abs(Zombie.X - Player.X) >= 96 | abs(Zombie.Y - Player.Y) >= 96"
+						"value": "abs(Zombie.X - Player.X) >= 96 * Zombie.Size | abs(Zombie.Y - Player.Y) >= 96 * Zombie.Size"
 					}
 				},
 				{
@@ -1181,9 +1181,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Zombie",
-							"sid": 854974602181997,
+							"sid": 113551509999357,
 							"parameters": {
-								"animation": "\"North\"",
+								"animation": "Zombie.Creature & \"_North\"",
 								"from": "current-frame"
 							}
 						},
@@ -1215,9 +1215,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Zombie",
-							"sid": 805248123319619,
+							"sid": 525174653079292,
 							"parameters": {
-								"animation": "\"South\"",
+								"animation": "Zombie.Creature & \"_South\"",
 								"from": "current-frame"
 							}
 						},
@@ -1249,9 +1249,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Zombie",
-							"sid": 435742446444541,
+							"sid": 231810319928287,
 							"parameters": {
-								"animation": "\"West\"",
+								"animation": "Zombie.Creature & \"_West\"",
 								"from": "current-frame"
 							}
 						},
@@ -1283,9 +1283,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Zombie",
-							"sid": 382375226100129,
+							"sid": 991275551546458,
 							"parameters": {
-								"animation": "\"East\"",
+								"animation": "Zombie.Creature & \"_East\"",
 								"from": "current-frame"
 							}
 						},
@@ -1317,9 +1317,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 776995730061064,
+					"sid": 308898805865143,
 					"parameters": {
-						"value": "abs(Zombie.X - Player.X) <= 64 & abs(Zombie.Y - Player.Y) <= 64"
+						"value": "abs(Zombie.X - Player.X) <= (64 + Zombie.AttackRangeModifier) * Zombie.Size & abs(Zombie.Y - Player.Y) <= (64 + Zombie.AttackRangeModifier) * Zombie.Size"
 					}
 				},
 				{
@@ -1371,9 +1371,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 203213176309642,
+					"sid": 122394877084611,
 					"parameters": {
-						"animation": "\"Charge\"",
+						"animation": "Zombie.Creature & \"_Charge\"",
 						"from": "current-frame"
 					}
 				},
@@ -1419,9 +1419,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Zombie",
-					"sid": 352682027244016,
+					"sid": 872471290626819,
 					"parameters": {
-						"animation": "\"Attack\"",
+						"animation": "Zombie.Creature & \"_Attack\"",
 						"from": "current-frame"
 					}
 				},
@@ -1433,9 +1433,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 455176526572941,
+					"sid": 234085803361551,
 					"parameters": {
-						"seconds": "0.2"
+						"seconds": "Zombie.AttackLength"
 					}
 				},
 				{
@@ -1473,9 +1473,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 728748859113863,
+					"sid": 216745919115537,
 					"parameters": {
-						"seconds": "1.5"
+						"seconds": "Zombie.AttackSpeed"
 					}
 				},
 				{
@@ -2041,9 +2041,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 197246245313110,
+					"sid": 844019755741545,
 					"parameters": {
-						"value": "(Player.direction = 0 & (Player.X - 96 <= Zombie.X | Player.X + 96 >= Zombie.X) & Player.Y + 96 >= Zombie.Y & Player.Y < Zombie.Y) | (Player.direction = 1 & (Player.Y - 96 <= Zombie.Y | Player.Y + 96 >= Zombie.Y) & Player.X + 96 >= Zombie.X & Player.X < Zombie.X) | (Player.direction = 2 & (Player.X - 96 <= Zombie.X | Player.X + 96 >= Zombie.X) & Player.Y - 96 <= Zombie.Y & Player.Y > Zombie.Y) | (Player.direction = 3 & (Player.Y - 96 <= Zombie.Y | Player.Y + 96 >= Zombie.Y) & Player.X - 96 <= Zombie.X & Player.X > Zombie.X)"
+						"value": "(Player.direction = 0 & (Player.X - 96 * Zombie.Size <= Zombie.X | Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y + 96 * Zombie.Size >= Zombie.Y & Player.Y < Zombie.Y) | (Player.direction = 1 & (Player.Y - 96 * Zombie.Size <= Zombie.Y | Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X + 96 * Zombie.Size >= Zombie.X & Player.X < Zombie.X) | (Player.direction = 2 & (Player.X - 96 * Zombie.Size <= Zombie.X | Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y - 96 * Zombie.Size <= Zombie.Y & Player.Y > Zombie.Y) | (Player.direction = 3 & (Player.Y - 96 * Zombie.Size <= Zombie.Y | Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X - 96 * Zombie.Size <= Zombie.X & Player.X > Zombie.X)"
 					}
 				}
 			],
@@ -2418,6 +2418,15 @@
 					"parameters": {
 						"object": "Door"
 					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Door",
+					"sid": 188898758786135,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
 				}
 			],
 			"actions": [
@@ -2573,6 +2582,48 @@
 				}
 			],
 			"sid": 895023516201117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 596625682047243,
+					"parameters": {
+						"value": "Zombie.Count = 0"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Door",
+					"sid": 561945174585733,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Door",
+					"sid": 952308721334290,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Door",
+					"sid": 383389550031670,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 389851237159030
 		}
 	],
 	"sid": 959296099580758

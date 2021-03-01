@@ -45,6 +45,36 @@
 			"type": "number",
 			"desc": "",
 			"sid": 534340051185701
+		},
+		{
+			"name": "Creature",
+			"type": "string",
+			"desc": "",
+			"sid": 682728025220739
+		},
+		{
+			"name": "Size",
+			"type": "number",
+			"desc": "",
+			"sid": 954964007414861
+		},
+		{
+			"name": "AttackRangeModifier",
+			"type": "number",
+			"desc": "",
+			"sid": 308274620112490
+		},
+		{
+			"name": "AttackSpeed",
+			"type": "number",
+			"desc": "",
+			"sid": 539855911195296
+		},
+		{
+			"name": "AttackLength",
+			"type": "number",
+			"desc": "",
+			"sid": 171060280383186
 		}
 	],
 	"behaviorTypes": [
@@ -199,7 +229,7 @@
 					}
 				],
 				"sid": 491725964205958,
-				"name": "South",
+				"name": "Zombie_South",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -338,7 +368,7 @@
 					}
 				],
 				"sid": 486383161238765,
-				"name": "East",
+				"name": "Zombie_East",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -477,7 +507,7 @@
 					}
 				],
 				"sid": 473769125674040,
-				"name": "North",
+				"name": "Zombie_North",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -616,7 +646,7 @@
 					}
 				],
 				"sid": 209013712367533,
-				"name": "West",
+				"name": "Zombie_West",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -755,12 +785,12 @@
 					}
 				],
 				"sid": 723450427681604,
-				"name": "Charge",
+				"name": "Zombie_Charge",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [
@@ -894,12 +924,846 @@
 					}
 				],
 				"sid": 685571629035323,
-				"name": "Attack",
+				"name": "Zombie_Attack",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 406250,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4817003,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8777658,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8503545,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 580520557824995,
+				"name": "Dragon_South",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5962948,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4793052,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.96826171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6221083,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8452338,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.96826171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 141243030579778,
+				"name": "Dragon_East",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6545983,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2710099,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5995783,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6350037,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 954864559303826,
+				"name": "Dragon_North",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8478619,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9407499,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.96826171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4691163,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8203955,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.96826171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 639546468598871,
+				"name": "Dragon_West",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7086374,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9754328,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4537629,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.90576171875,
+								0.90576171875,
+								0.5,
+								0.90576171875,
+								0.09375,
+								0.90576171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7891815,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.74951171875,
+								0.5,
+								0.74951171875,
+								0.74951171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 838177239983942,
+				"name": "Dragon_Charge",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3787647,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.93701171875,
+								0.93701171875,
+								0.5,
+								0.99951171875,
+								0.0625,
+								0.93701171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7702897,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0.09375,
+								0.74951171875,
+								0.25,
+								0.84326171875,
+								0.5,
+								0.96826171875,
+								0.96826171875,
+								0.5,
+								0.93701171875,
+								0.15625,
+								0.84326171875,
+								0.1875,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4631829,
+						"collisionPoly": {
+							"points": [
+								0.109375,
+								0.109375,
+								0.5,
+								0.1875,
+								0.89013671875,
+								0.109375,
+								0.92138671875,
+								0.5,
+								0.93701171875,
+								0.93701171875,
+								0.5,
+								0.99951171875,
+								0.0625,
+								0.93701171875,
+								0.078125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 256,
+						"height": 256,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2542651,
+						"collisionPoly": {
+							"points": [
+								0.8125,
+								0.5,
+								0.84375,
+								0.84326171875,
+								0.5,
+								0.93701171875,
+								0.03173828125,
+								0.96826171875,
+								0.15673828125,
+								0.5,
+								0.25048828125,
+								0.25,
+								0.5,
+								0.09375,
+								0.8125,
+								0.1875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 850320891985898,
+				"name": "Dragon_Attack",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []
