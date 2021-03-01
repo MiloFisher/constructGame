@@ -282,7 +282,8 @@
 						"Size": 2,
 						"AttackRangeModifier": 16,
 						"AttackSpeed": 2.5,
-						"AttackLength": 3.5
+						"AttackLength": 3.5,
+						"ChargeTime": 0.6
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -525,7 +526,7 @@
 						}
 					},
 					"world": {
-						"x": 1144,
+						"x": 1152,
 						"y": 896,
 						"width": 192,
 						"height": 128,

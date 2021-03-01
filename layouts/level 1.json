@@ -652,7 +652,7 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
@@ -789,7 +789,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -856,7 +857,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -923,7 +925,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1083,7 +1086,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1243,7 +1247,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1341,7 +1346,8 @@
 						"Size": 1,
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
-						"AttackLength": 0.2
+						"AttackLength": 0.2,
+						"ChargeTime": 0.3
 					},
 					"behaviors": {
 						"TileMovement": {

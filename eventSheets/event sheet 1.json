@@ -861,6 +861,15 @@
 						"instance-variable": "inInventory"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 245832795604232,
+					"parameters": {
+						"value": "Zombie.chargingUp | Zombie.attacking "
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -925,6 +934,15 @@
 					"sid": 744804776382019,
 					"parameters": {
 						"instance-variable": "inInventory"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 818629133412190,
+					"parameters": {
+						"value": "Zombie.chargingUp | Zombie.attacking "
 					},
 					"isInverted": true
 				}
@@ -993,6 +1011,15 @@
 						"instance-variable": "inInventory"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 965799939146833,
+					"parameters": {
+						"value": "Zombie.chargingUp | Zombie.attacking "
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -1057,6 +1084,15 @@
 					"sid": 417965010103475,
 					"parameters": {
 						"instance-variable": "inInventory"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 399551180230251,
+					"parameters": {
+						"value": "Zombie.chargingUp | Zombie.attacking "
 					},
 					"isInverted": true
 				}
@@ -1385,9 +1421,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 332387044137228,
+					"sid": 721148650201243,
 					"parameters": {
-						"seconds": "0.3"
+						"seconds": "Zombie.ChargeTime"
 					}
 				},
 				{
@@ -1526,6 +1562,14 @@
 						"value": "Player.isBlocking & abs(Player.direction - Zombie.direction) = 2"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 941436465154537,
+					"parameters": {
+						"value": "abs(Zombie.X - Player.X) <= (64 + Zombie.AttackRangeModifier) * Zombie.Size & abs(Zombie.Y - Player.Y) <= (64 + Zombie.AttackRangeModifier) * Zombie.Size"
+					}
 				}
 			],
 			"actions": [
