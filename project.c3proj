@@ -120,7 +120,8 @@
 			"gameOver",
 			"gameOverBG",
 			"arrowProjectile",
-			"Door"
+			"Door",
+			"Torch"
 		],
 		"subfolders": []
 	},
