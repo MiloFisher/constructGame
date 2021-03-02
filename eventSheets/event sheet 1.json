@@ -2160,10 +2160,10 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Zombie",
-					"sid": 550137273963913,
+					"sid": 486896679776048,
 					"parameters": {
 						"instance-variable": "health",
-						"comparison": 0,
+						"comparison": 3,
 						"value": "0"
 					}
 				}
