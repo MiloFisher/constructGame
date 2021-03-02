@@ -2353,12 +2353,13 @@
 					}
 				},
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "arrowProjectile",
-					"sid": 622527567283653,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Zombie",
+					"sid": 627254280408305,
 					"parameters": {
-						"object": "Border"
-					}
+						"instance-variable": "invincible"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -2419,8 +2420,7 @@
 					}
 				}
 			],
-			"sid": 496046017862037,
-			"isOrBlock": true
+			"sid": 496046017862037
 		},
 		{
 			"eventType": "block",
@@ -2668,6 +2668,27 @@
 				}
 			],
 			"sid": 389851237159030
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "arrowProjectile",
+					"sid": 712943562431088,
+					"parameters": {
+						"object": "Border"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "arrowProjectile",
+					"sid": 315819756567390
+				}
+			],
+			"sid": 377905104762274
 		}
 	],
 	"sid": 959296099580758
