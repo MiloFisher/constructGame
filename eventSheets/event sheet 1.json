@@ -140,6 +140,18 @@
 						"instance-variable": "isBlocking",
 						"value": "true"
 					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 632660456362773,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"metalslide-\" & int(random(1,3))",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 489605739313544
@@ -1583,6 +1595,18 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 775502544822227,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"stab-\" & int(random(1,3))",
+						"loop": "not-looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-boolean-instvar",
 					"objectClass": "Player",
 					"sid": 308069127609660,
@@ -1670,6 +1694,18 @@
 					"sid": 325070411088069,
 					"parameters": {
 						"text": "inv.At(itemSprite.itemID)"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 797366821981068,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"coin-\" & itemSprite.itemID",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -1996,6 +2032,18 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 121051799803605,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"knife-slash-\" & int(random(1,4))",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "stop-animation",
 					"objectClass": "Player",
 					"sid": 439922151272145
@@ -2119,6 +2167,18 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 729293941240997,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"zombie-hit-\" & int(random(1,3))",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 207423347421290,
@@ -2173,6 +2233,17 @@
 					"id": "destroy",
 					"objectClass": "Zombie",
 					"sid": 235929442583304
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 798638246658227,
+					"parameters": {
+						"audio-file": "slash",
+						"loop": "not-looping",
+						"volume": "-17",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "spawn-another-object",
@@ -2240,6 +2311,19 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 110101990795421,
+					"parameters": {
+						"seconds": "3.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 511657085542454
 				}
 			],
 			"sid": 923759753205011
@@ -2336,6 +2420,17 @@
 					"sid": 489305212565245,
 					"parameters": {
 						"text": "inv.At(1)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 183296257536593,
+					"parameters": {
+						"audio-file": "arrow-loose",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -2489,6 +2584,17 @@
 					"sid": 390358265283057,
 					"parameters": {
 						"which": "next"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 685087776355569,
+					"parameters": {
+						"audio-file": "squeegee",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -2686,6 +2792,17 @@
 					"id": "destroy",
 					"objectClass": "arrowProjectile",
 					"sid": 315819756567390
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 636587639667243,
+					"parameters": {
+						"audio-file": "arrow-hit-wall",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 377905104762274

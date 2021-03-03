@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r234.4",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -121,7 +129,8 @@
 			"gameOverBG",
 			"arrowProjectile",
 			"Door",
-			"Torch"
+			"Torch",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -154,7 +163,113 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "arrow-hit-wall.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 538347577538412
+				},
+				{
+					"name": "arrow-loose.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 678667199836080
+				},
+				{
+					"name": "arrow-pull-and-loose.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 568153286412811
+				},
+				{
+					"name": "coin-0.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 628054169567408
+				},
+				{
+					"name": "coin-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 449025008640059
+				},
+				{
+					"name": "knife-slash-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 503555165112964
+				},
+				{
+					"name": "knife-slash-2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 971519140923096
+				},
+				{
+					"name": "knife-slash-3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 326900630029020
+				},
+				{
+					"name": "metalslide-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 252886421231742
+				},
+				{
+					"name": "metalslide-2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 767218329375591
+				},
+				{
+					"name": "slash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 654436073272681
+				},
+				{
+					"name": "squeegee.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 232883278128937
+				},
+				{
+					"name": "stab-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 356379926130465
+				},
+				{
+					"name": "stab-2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 154565778785490
+				},
+				{
+					"name": "step-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 132125216991884
+				},
+				{
+					"name": "step-2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 535804167444335
+				},
+				{
+					"name": "step-3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 419356698274797
+				},
+				{
+					"name": "step-4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 626074418401938
+				},
+				{
+					"name": "zombie-gargles.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 815842868431657
+				},
+				{
+					"name": "zombie-hit-1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 658247824538501
+				},
+				{
+					"name": "zombie-hit-2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335120839356609
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
