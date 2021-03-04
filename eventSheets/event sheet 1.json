@@ -2133,9 +2133,9 @@
 				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
-					"sid": 844019755741545,
+					"sid": 749053982996505,
 					"parameters": {
-						"value": "(Player.direction = 0 & (Player.X - 96 * Zombie.Size <= Zombie.X | Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y + 96 * Zombie.Size >= Zombie.Y & Player.Y < Zombie.Y) | (Player.direction = 1 & (Player.Y - 96 * Zombie.Size <= Zombie.Y | Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X + 96 * Zombie.Size >= Zombie.X & Player.X < Zombie.X) | (Player.direction = 2 & (Player.X - 96 * Zombie.Size <= Zombie.X | Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y - 96 * Zombie.Size <= Zombie.Y & Player.Y > Zombie.Y) | (Player.direction = 3 & (Player.Y - 96 * Zombie.Size <= Zombie.Y | Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X - 96 * Zombie.Size <= Zombie.X & Player.X > Zombie.X)"
+						"value": "(Player.direction = 0 & (Player.X - 96 * Zombie.Size <= Zombie.X & Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y + 96 * Zombie.Size >= Zombie.Y & Player.Y < Zombie.Y) | (Player.direction = 1 & (Player.Y - 96 * Zombie.Size <= Zombie.Y & Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X + 96 * Zombie.Size >= Zombie.X & Player.X < Zombie.X) | (Player.direction = 2 & (Player.X - 96 * Zombie.Size <= Zombie.X & Player.X + 96 * Zombie.Size >= Zombie.X) & Player.Y - 96 * Zombie.Size <= Zombie.Y & Player.Y > Zombie.Y) | (Player.direction = 3 & (Player.Y - 96 * Zombie.Size <= Zombie.Y & Player.Y + 96 * Zombie.Size >= Zombie.Y) & Player.X - 96 * Zombie.Size <= Zombie.X & Player.X > Zombie.X)"
 					}
 				}
 			],
