@@ -12,6 +12,16 @@
 			"sid": 228048404927351
 		},
 		{
+			"eventType": "variable",
+			"name": "musicPlaying",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 537222272576486
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -56,6 +66,17 @@
 					"parameters": {
 						"instance-variable": "currentHealth",
 						"value": "PlayerHealth"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 629846641956652,
+					"parameters": {
+						"audio-file": "dun",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -2034,12 +2055,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 121051799803605,
+					"sid": 984547016541046,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"knife-slash-\" & int(random(1,4))",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "5",
 						"tag-optional": "\"\""
 					}
 				},

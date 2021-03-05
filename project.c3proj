@@ -130,7 +130,8 @@
 			"arrowProjectile",
 			"Door",
 			"Torch",
-			"Audio"
+			"Audio",
+			"score"
 		],
 		"subfolders": []
 	},
@@ -273,7 +274,13 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "dun.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 682695806536303
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
