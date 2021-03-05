@@ -131,7 +131,8 @@
 			"Door",
 			"Torch",
 			"Audio",
-			"score"
+			"score",
+			"win"
 		],
 		"subfolders": []
 	},
@@ -256,7 +257,7 @@
 					"sid": 626074418401938
 				},
 				{
-					"name": "zombie-gargles.webm",
+					"name": "zombie-noise.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 815842868431657
 				},
@@ -269,6 +270,21 @@
 					"name": "zombie-hit-2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 335120839356609
+				},
+				{
+					"name": "dragon-noise.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 458559889763853
+				},
+				{
+					"name": "dragon-hit-1.mp3",
+					"type": "audio/mpeg",
+					"sid": 538944664632821
+				},
+				{
+					"name": "knife-slash-0.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 481275830073456
 				}
 			],
 			"subfolders": []

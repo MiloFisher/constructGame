@@ -588,7 +588,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -656,7 +657,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -724,7 +726,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -792,7 +795,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -860,7 +864,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -928,7 +933,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -996,7 +1002,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1064,7 +1071,8 @@
 						"AttackRangeModifier": 0,
 						"AttackSpeed": 1.5,
 						"AttackLength": 0.2,
-						"ChargeTime": 0.3
+						"ChargeTime": 0.3,
+						"AttackVolume": 0
 					},
 					"behaviors": {
 						"TileMovement": {
@@ -1570,7 +1578,7 @@
 						"isAttacking": false,
 						"attackInProgress": false,
 						"directionName": "",
-						"inInventory": false
+						"paused": false
 					},
 					"behaviors": {
 						"TileMovement": {

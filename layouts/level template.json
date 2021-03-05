@@ -216,7 +216,7 @@
 						"isAttacking": false,
 						"attackInProgress": false,
 						"directionName": "",
-						"inInventory": false
+						"paused": false
 					},
 					"behaviors": {
 						"TileMovement": {

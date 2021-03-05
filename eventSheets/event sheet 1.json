@@ -3,16 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "PlayerHealth",
-			"type": "number",
-			"initialValue": "5",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 228048404927351
-		},
-		{
-			"eventType": "variable",
 			"name": "musicPlaying",
 			"type": "boolean",
 			"initialValue": "false",
@@ -62,20 +52,20 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Player",
-					"sid": 455030706035530,
+					"sid": 262405441790378,
 					"parameters": {
 						"instance-variable": "currentHealth",
-						"value": "PlayerHealth"
+						"value": "5"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 629846641956652,
+					"sid": 288264834622231,
 					"parameters": {
 						"audio-file": "dun",
 						"loop": "looping",
-						"volume": "-15",
+						"volume": "-20",
 						"tag-optional": "\"\""
 					}
 				}
@@ -116,7 +106,7 @@
 					"objectClass": "Player",
 					"sid": 212598912279628,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -280,7 +270,7 @@
 					"objectClass": "Player",
 					"sid": 937966381847939,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -311,6 +301,15 @@
 					"parameters": {
 						"instance-variable": "direction",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Player",
+					"sid": 434756108684640,
+					"parameters": {
+						"instance-variable": "directionName",
+						"value": "Player.AnimationName"
 					}
 				}
 			],
@@ -377,7 +376,7 @@
 					"objectClass": "Player",
 					"sid": 481559977797809,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -483,7 +482,7 @@
 					"objectClass": "Player",
 					"sid": 252878156270877,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -589,7 +588,7 @@
 					"objectClass": "Player",
 					"sid": 937552863741238,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -891,7 +890,7 @@
 					"objectClass": "Player",
 					"sid": 550144759318998,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				},
@@ -966,7 +965,7 @@
 					"objectClass": "Player",
 					"sid": 744804776382019,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				},
@@ -1041,7 +1040,7 @@
 					"objectClass": "Player",
 					"sid": 267444230413382,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				},
@@ -1116,7 +1115,7 @@
 					"objectClass": "Player",
 					"sid": 417965010103475,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				},
@@ -1151,43 +1150,6 @@
 				}
 			],
 			"sid": 749854237264972
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 364317568366123
-				},
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 452160882504440,
-					"parameters": {
-						"object": "Zombie"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-z-elevation",
-					"objectClass": "Player",
-					"sid": 561144385571430,
-					"parameters": {
-						"z": "Player.Y * 0.0000001"
-					}
-				},
-				{
-					"id": "set-z-elevation",
-					"objectClass": "Zombie",
-					"sid": 253601239761854,
-					"parameters": {
-						"z": "Zombie.Y * 0.0000001"
-					}
-				}
-			],
-			"sid": 385791700277414
 		},
 		{
 			"eventType": "block",
@@ -1405,7 +1367,7 @@
 					"objectClass": "Player",
 					"sid": 798552221669008,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -1450,6 +1412,18 @@
 					"id": "stop-animation",
 					"objectClass": "Zombie",
 					"sid": 918586992906482
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 583865143518550,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "Zombie.Creature & \"-noise\"",
+						"loop": "not-looping",
+						"volume": "Zombie.AttackVolume",
+						"tag-optional": "\"\""
+					}
 				},
 				{
 					"id": "wait",
@@ -1720,12 +1694,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 797366821981068,
+					"sid": 104731363679438,
 					"parameters": {
 						"folder": "sounds",
 						"audio-file-name": "\"coin-\" & itemSprite.itemID",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-5 * itemSprite.itemID",
 						"tag-optional": "\"\""
 					}
 				}
@@ -1756,7 +1730,7 @@
 					"objectClass": "Player",
 					"sid": 244819987265575,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -1815,7 +1789,7 @@
 					"objectClass": "Player",
 					"sid": 405474444690225,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -1874,7 +1848,7 @@
 					"objectClass": "Player",
 					"sid": 767053452544445,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -1933,7 +1907,7 @@
 					"objectClass": "Player",
 					"sid": 265809760761739,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -2002,7 +1976,7 @@
 					"objectClass": "Player",
 					"sid": 390450013776206,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -2055,12 +2029,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 984547016541046,
+					"sid": 892525568186266,
 					"parameters": {
 						"folder": "sounds",
-						"audio-file-name": "\"knife-slash-\" & int(random(1,4))",
+						"audio-file-name": "\"knife-slash-0\"",
 						"loop": "not-looping",
-						"volume": "5",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},
@@ -2190,12 +2164,12 @@
 				{
 					"id": "play-by-name",
 					"objectClass": "Audio",
-					"sid": 729293941240997,
+					"sid": 116630857842213,
 					"parameters": {
 						"folder": "sounds",
-						"audio-file-name": "\"zombie-hit-\" & int(random(1,3))",
+						"audio-file-name": "Zombie.Creature & \"-hit-1\"",
 						"loop": "not-looping",
-						"volume": "-10",
+						"volume": "-5",
 						"tag-optional": "\"\""
 					}
 				},
@@ -2401,7 +2375,7 @@
 					"objectClass": "Player",
 					"sid": 348730432407501,
 					"parameters": {
-						"instance-variable": "inInventory"
+						"instance-variable": "paused"
 					},
 					"isInverted": true
 				}
@@ -2511,6 +2485,18 @@
 					}
 				},
 				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 452129587334600,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "Zombie.Creature & \"-hit-1\"",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 199999673139543,
@@ -2544,14 +2530,38 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 772336606771752
+					"sid": 318456499013676
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 832260293455837,
+					"parameters": {
+						"object": "Zombie"
+					}
 				}
 			],
 			"actions": [
 				{
+					"id": "set-z-elevation",
+					"objectClass": "Player",
+					"sid": 995827451148060,
+					"parameters": {
+						"z": "Player.Y * 0.0000001"
+					}
+				},
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Zombie",
+					"sid": 187473466074203,
+					"parameters": {
+						"z": "Zombie.Y * 0.0000001"
+					}
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "itemSprite",
-					"sid": 838908235466972,
+					"sid": 591267972974340,
 					"parameters": {
 						"frame-number": "itemSprite.itemID"
 					}
@@ -2559,14 +2569,14 @@
 				{
 					"id": "set-size",
 					"objectClass": "healthbar",
-					"sid": 934135582350899,
+					"sid": 725852480204434,
 					"parameters": {
 						"width": "Player.currentHealth * 32",
 						"height": "32"
 					}
 				}
 			],
-			"sid": 539781620110296
+			"sid": 276468368655229
 		},
 		{
 			"eventType": "block",
@@ -2582,23 +2592,14 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "Door",
-					"sid": 188898758786135,
+					"sid": 297856511398677,
 					"parameters": {
 						"comparison": 0,
-						"number": "1"
+						"number": "0"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 229780660837168,
-					"parameters": {
-						"variable": "PlayerHealth",
-						"value": "Player.currentHealth"
-					}
-				},
 				{
 					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
@@ -2768,10 +2769,10 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "Door",
-					"sid": 561945174585733,
+					"sid": 200570948691871,
 					"parameters": {
 						"comparison": 0,
-						"number": "0"
+						"number": "1"
 					}
 				}
 			],
@@ -2779,9 +2780,9 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Door",
-					"sid": 952308721334290,
+					"sid": 162862300752126,
 					"parameters": {
-						"frame-number": "1"
+						"frame-number": "0"
 					}
 				},
 				{
@@ -2827,6 +2828,40 @@
 				}
 			],
 			"sid": 377905104762274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 745349529226077,
+					"parameters": {
+						"interval-seconds": "0.4"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 591358452216682,
+					"behaviorType": "TileMovement"
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 462100423029769,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"step-\" & int(random(1,5))",
+						"loop": "not-looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 210844479287772
 		}
 	],
 	"sid": 959296099580758

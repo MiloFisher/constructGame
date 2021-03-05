@@ -81,6 +81,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 371854455223696
+		},
+		{
+			"name": "AttackVolume",
+			"type": "number",
+			"desc": "",
+			"sid": 293866041308841
 		}
 	],
 	"behaviorTypes": [

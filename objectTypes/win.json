@@ -1,0 +1,26 @@
+{
+	"name": "win",
+	"plugin-id": "Spritefont2",
+	"sid": 393207632095782,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 607452104100135
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 55305,
+		"useCollisionPoly": true
+	}
+}

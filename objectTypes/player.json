@@ -47,7 +47,7 @@
 			"sid": 696455454518382
 		},
 		{
-			"name": "inInventory",
+			"name": "paused",
 			"type": "boolean",
 			"desc": "",
 			"sid": 779765843027471
