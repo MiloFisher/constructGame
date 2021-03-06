@@ -132,7 +132,10 @@
 			"Torch",
 			"Audio",
 			"score",
-			"win"
+			"win",
+			"Barrel",
+			"Bars",
+			"Hole"
 		],
 		"subfolders": []
 	},
