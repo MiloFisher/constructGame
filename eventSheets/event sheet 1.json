@@ -2126,6 +2126,11 @@
 					"isInverted": true
 				},
 				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 843838197722894
+				},
+				{
 					"id": "evaluate-expression",
 					"objectClass": "System",
 					"sid": 749053982996505,
@@ -2450,6 +2455,11 @@
 						"instance-variable": "invincible"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Zombie",
+					"sid": 676838707943550
 				}
 			],
 			"actions": [
