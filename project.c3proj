@@ -135,7 +135,10 @@
 			"win",
 			"Barrel",
 			"Bars",
-			"Hole"
+			"Hole",
+			"tutorial",
+			"textbg",
+			"TutorialRat"
 		],
 		"subfolders": []
 	},
@@ -153,6 +156,7 @@
 			"Level 2",
 			"Level 3",
 			"Level 4",
+			"Boss",
 			"You Win"
 		],
 		"subfolders": []

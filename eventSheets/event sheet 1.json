@@ -2,16 +2,6 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "musicPlaying",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 537222272576486
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -61,11 +51,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 288264834622231,
+					"sid": 752365966624245,
 					"parameters": {
 						"audio-file": "dun",
 						"loop": "looping",
-						"volume": "-20",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				}

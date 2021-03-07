@@ -1,16 +1,10 @@
 {
-	"name": "win",
+	"name": "tutorial",
 	"plugin-id": "Spritefont2",
-	"sid": 393207632095782,
+	"sid": 323666185397689,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Anchor",
-			"sid": 607452104100135
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
 		"width": 128,
@@ -20,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6018413,
+		"imageSpriteId": 6362498,
 		"useCollisionPoly": true
 	}
 }
