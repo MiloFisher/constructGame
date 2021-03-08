@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "TitleScreen",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 543879552257272
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2461,10 +2471,10 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Zombie",
-					"sid": 467165964507454,
+					"sid": 379528356410399,
 					"parameters": {
 						"instance-variable": "health",
-						"value": "3"
+						"value": "2"
 					}
 				},
 				{
@@ -2590,12 +2600,11 @@
 					}
 				},
 				{
-					"id": "compare-animation-frame",
-					"objectClass": "Door",
-					"sid": 297856511398677,
+					"id": "evaluate-expression",
+					"objectClass": "System",
+					"sid": 798346542836654,
 					"parameters": {
-						"comparison": 0,
-						"number": "0"
+						"value": "Keyboard.StringFromKeyCode(Keyboard.LastKeyCode) = \" \" & TitleScreen"
 					}
 				}
 			],
@@ -2618,9 +2627,19 @@
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 715125000552496,
+					"parameters": {
+						"variable": "TitleScreen",
+						"value": "false"
+					}
 				}
 			],
-			"sid": 696641379822484
+			"sid": 696641379822484,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -2769,7 +2788,7 @@
 				{
 					"id": "compare-animation-frame",
 					"objectClass": "Door",
-					"sid": 200570948691871,
+					"sid": 224279836423590,
 					"parameters": {
 						"comparison": 0,
 						"number": "1"

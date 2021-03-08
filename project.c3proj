@@ -138,7 +138,8 @@
 			"Hole",
 			"tutorial",
 			"textbg",
-			"TutorialRat"
+			"TutorialRat",
+			"TitleScreen"
 		],
 		"subfolders": []
 	},
@@ -150,12 +151,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Test Layout",
 			"Level Template",
+			"Title Screen",
 			"Level 1",
 			"Level 2",
 			"Level 3",
 			"Level 4",
+			"Level 5",
 			"Boss",
 			"You Win"
 		],

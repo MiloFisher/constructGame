@@ -1776,6 +1776,840 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7315335,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 701657,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.6552734375,
+								0.6552734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9358586,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 887398,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.34375,
+								0.6552734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 400523668453909,
+				"name": "Special_Zombie_South",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2691461,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6865234375,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.375,
+								0.6240234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7916697,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6865234375,
+								0.6865234375,
+								0.5,
+								0.8115234375,
+								0.375,
+								0.6240234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4546087,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6865234375,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.375,
+								0.6240234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2149237,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6865234375,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.25,
+								0.7490234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 729369954080744,
+				"name": "Special_Zombie_East",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 864258,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4770387,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.6552734375,
+								0.6552734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1125064,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7543901,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.34375,
+								0.6552734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 481610976512329,
+				"name": "Special_Zombie_North",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8354205,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.6875,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.3759765625,
+								0.6240234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3141236,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.6875,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.3759765625,
+								0.6240234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2626071,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.6875,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.3759765625,
+								0.6240234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9707149,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.6875,
+								0.6865234375,
+								0.5,
+								0.8115234375,
+								0.2509765625,
+								0.7490234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 445402551897316,
+				"name": "Special_Zombie_West",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3577214,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 42737,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6240234375,
+								0.6240234375,
+								0.5,
+								0.8740234375,
+								0.375,
+								0.6240234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5515923,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.8427734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.15625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8144913,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.625,
+								0.6240234375,
+								0.5,
+								0.8740234375,
+								0.3759765625,
+								0.6240234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 393882222082619,
+				"name": "Special_Zombie_Charge",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3900875,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.9052734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.09375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5828298,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.0625,
+								0.5615234375,
+								0.4375,
+								0.6865234375,
+								0.5,
+								0.6865234375,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.375,
+								0.6240234375,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2385215,
+						"collisionPoly": {
+							"points": [
+								0.28125,
+								0.28125,
+								0.5,
+								0.125,
+								0.7177734375,
+								0.28125,
+								0.9052734375,
+								0.5,
+								0.7802734375,
+								0.7802734375,
+								0.5,
+								0.7490234375,
+								0.21875,
+								0.7802734375,
+								0.09375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3800503,
+						"collisionPoly": {
+							"points": [
+								0.6875,
+								0.5,
+								0.6875,
+								0.6865234375,
+								0.5,
+								0.8740234375,
+								0.3759765625,
+								0.6240234375,
+								0.3134765625,
+								0.5,
+								0.2509765625,
+								0.25,
+								0.5,
+								0.0625,
+								0.5625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 242480134444167,
+				"name": "Special_Zombie_Attack",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []

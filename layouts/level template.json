@@ -630,7 +630,20 @@
 		}
 	],
 	"sid": 541579772765110,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "inv",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 7,
+			"instanceVariables": {
+				"coins": 0
+			}
+		}
+	],
 	"effectTypes": [],
 	"width": 2944,
 	"height": 2944,
